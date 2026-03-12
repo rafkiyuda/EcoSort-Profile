@@ -42,11 +42,28 @@ export default function Locator() {
                     overflow: 'hidden',
                     boxShadow: 'inset 0 2px 20px rgba(0,0,0,0.05)'
                 }}>
-                    <div style={{ position: 'absolute', top: '20%', left: '30%', fontSize: '2rem' }}>📍</div>
-                    <div style={{ position: 'absolute', top: '50%', left: '70%', fontSize: '2rem' }}>📍</div>
-                    <div style={{ position: 'absolute', top: '80%', left: '40%', fontSize: '2rem' }}>📍</div>
-                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#aaa', fontWeight: 600 }}>
-                        INTERACTIVE MAP PREVIEW
+                    <img
+                        src="/map.png"
+                        alt="EcoSort RVM Map"
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            opacity: 0.9
+                        }}
+                    />
+                    <div style={{
+                        position: 'absolute',
+                        bottom: '20px',
+                        right: '20px',
+                        background: 'white',
+                        padding: '8px 16px',
+                        borderRadius: '12px',
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+                    }}>
+                        Displaying 12 active RVMs in Jakarta
                     </div>
                 </div>
             </div>
